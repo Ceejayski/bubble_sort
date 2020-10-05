@@ -13,19 +13,18 @@ def bubble_sort(array)
 
         array[index], array[index + 1] = array[index + 1], array[index]
         swap = true
-        print "iterations #{array} \n"
       end
     end
-    print "Sorted Array:#{array}"
+    return array
   # else loop if array lenght is < 2 to print back the array
   else
-    print array
+    return array
   end
 end
 
 array = [4, 4, 5, 6, 7, 78, 8, 9, 80, 90, 0]
 
-puts bubble_sort(array)
+prints bubble_sort(array)
 puts '----------Next bubble sort method---------'
 
 def bubble_sort_by(array)
@@ -41,15 +40,14 @@ def bubble_sort_by(array)
 
         array[index], array[index + 1] = array[index + 1], array[index]
         swap = true
-        print "iterations #{array} \n"
       end
     end
-    print "Sorted Array:#{array}"
+    return array
   else
-    print array
+    return array
   end
 end
 
-puts bubble_sort_by(%w[hi hello money monster me fatherhey]) { |left, right|
+print bubble_sort_by(%w[hi hello money monster me fatherhey]) { |left, right|
   left.length - right.length
 }
