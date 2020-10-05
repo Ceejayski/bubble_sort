@@ -32,8 +32,19 @@ def bubble_sort_by(array)
     if array.size >= 2
         swap = true
         while swap
-            
+            swap = false
+            (array.length - 1).times do |index|
+                arr_word= array[index]
+                arr_word_next = array[index+1]
+                #called the yield Method as asked for as part of the prerequistes
+                if yield(arr_word, arr_word_next).positive?
+                    array[index], array[index+1] = array[index+1], array[index]
+                    swap = true
+                    print "iterations #{array} \n"
+                end
+            end
         end
+        print "Sorted Array:#{array}"
     else
         print array
     end
