@@ -27,3 +27,13 @@ array = [4,4,5,6,7,78,8,9,80,90,0]
 
 puts bubble_sort(array)
 puts "----------Next bubble sort method---------"
+
+def bubble_sort_by(array)
+    if array.size >= 2
+        swap = true
+        while swap
+            
+        end
+    else
+        print array
+    end
