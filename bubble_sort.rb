@@ -22,3 +22,8 @@ def bubble_sort(array)
         print array
     end
 end
+
+array = [4,4,5,6,7,78,8,9,80,90,0]
+
+puts bubble_sort(array)
+puts "----------Next bubble sort method---------"
