@@ -48,3 +48,8 @@ def bubble_sort_by(array)
     else
         print array
     end
+end
+
+puts bubble_sort_by(%w[hi hello money monster me fatherhey]){|left,right| 
+    left.length - right.length 
+}
